@@ -4,7 +4,7 @@
     --primary: #fe2c55;
     --black: #000;
     --white : #fff;
-    --text--color: #161823;
+    --text-color: #161823;
 
     // Default layout
     --default-layout-header-height: 60px;
@@ -27,7 +27,7 @@ body{
     font-size: 1.6rem;
     line-height: 1.5;
     text-rendering: optimizeSpeed;
-    color: var(--text--color);
+    color: var(--text-color);
 }
 
 button, input, [tabindex] {
@@ -35,8 +35,8 @@ button, input, [tabindex] {
     border: none;
 }
 
-a[hreft] {
-    color: var(--text--color);
+a[href] {
+    color: var(--text-color);
     text-decoration: none;
 }
 

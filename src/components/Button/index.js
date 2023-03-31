@@ -21,7 +21,7 @@ function Button({
     onClick,
     ...passProps
 }) {
-    let Comp = 'buttton';
+    let Comp = 'button';
     const props = {
         onClick,
         ...passProps,
