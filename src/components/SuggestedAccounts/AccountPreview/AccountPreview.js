@@ -5,33 +5,47 @@ import { faCheckCircle } from '@fortawesome/free-solid-svg-icons';
 import Button from '~/components/Button/Button';
 import styles from './AccountPreview.module.scss';
 
+// import { useEffect, useState } from 'react';
+
 const cx = classNames.bind(styles);
 
 function AccountPreview() {
+    // const [accountValues, setAccountValues] = useState([]);
+
+    // useEffect(() => {
+    //     fetch('https://tiktok.fullstack.edu.vn/api/users/suggested?page=1&per_page=5')
+    //         .then((res) => res.json())
+    //         .then((res) => {
+    //             setAccountValues(res.data);
+    //         });
+    //     // eslint-disable-next-line react-hooks/exhaustive-deps
+    // }, []);
+
+    // console.log('hao', accountValues);
+    // console.log('hao2', accountValues);
+
     return (
-        <div className={cx('wrapper')}>
-            <div className={cx('header')}>
-                <img
-                    className={cx('avatar')}
-                    src="https://p16-sign-va.tiktokcdn.com/tos-useast2a-avt-0068-aiso/65d3c6b1d1e205c75536ccf1f26d552d~c5_100x100.jpeg?x-expires=1680768000&x-signature=69cgztlsTK07XKYFFCZ4TRpKDVM%3D"
-                    alt=""
-                />
-                <Button className={cx('follow-btn')} primary>
-                    Follow
-                </Button>
-            </div>
-            <div className={cx('body')}>
-                <p className={cx('nickname')}>
-                    <strong>hahoanhao</strong>
-                    <FontAwesomeIcon className={cx('check')} icon={faCheckCircle} />
-                </p>
-                <p className={cx('name')}>ha hoan hao</p>
-                <p className={cx('analytisc')}>
-                    <strong className={cx('value')}>8.2M </strong>
-                    <span className={cx('label')}>Followers</span>
-                    <strong className={cx('value')}>8.2M </strong>
-                    <span className={cx('label')}>Likes</span>
-                </p>
+        <div>
+            <div className={cx('wrapper')}>
+                <div className={cx('header')}>
+                    <img className={cx('avatar')} src="" alt="" />
+                    <Button className={cx('follow-btn')} primary>
+                        Follow
+                    </Button>
+                </div>
+                <div className={cx('body')}>
+                    <p className={cx('nickname')}>
+                        <strong>hahoanhao</strong>
+                        <FontAwesomeIcon className={cx('check')} icon={faCheckCircle} />
+                    </p>
+                    <p className={cx('name')}>ha hoan hao123</p>
+                    <p className={cx('analytisc')}>
+                        <strong className={cx('value')}>8.2M </strong>
+                        <span className={cx('label')}>Followers</span>
+                        <strong className={cx('value')}>8.2M </strong>
+                        <span className={cx('label')}>Likes</span>
+                    </p>
+                </div>
             </div>
         </div>
     );
